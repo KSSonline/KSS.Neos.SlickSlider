@@ -1,0 +1,14 @@
+{
+    "name": "kss/neos-slickslider",
+    "type": "typo3-flow-plugin",
+    "description": "jQuery slick slider based on http://kenwheeler.github.io/slick/",
+    "license": "GPL-3.0+",
+    "require": {
+        "typo3/neos": "~2.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KSS\\Neos\\SlickSlider\\": "Classes"
+        }
+    }
+}

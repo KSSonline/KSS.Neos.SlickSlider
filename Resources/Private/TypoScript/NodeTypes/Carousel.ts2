@@ -1,0 +1,53 @@
+prototype(KSS.Neos.SlickSlider:Carousel) < prototype(TYPO3.Neos:Content) {
+	templatePath = 'resource://KSS.Neos.SlickSlider/Private/Templates/NodeTypes/Slick.html'
+	sectionName = 'slick'
+
+	node = ${node}
+
+	# Generate default ID, no matter if overridden by user (customHtmlId) or not
+	attributes.id = ${q(node).property('customHtmlId') ? q(node).property('customHtmlId') : 'slick-'+q(node).property('_identifier')}
+	slickElementId = ${q(node).property('customHtmlId') ? q(node).property('customHtmlId') : 'slick-'+q(node).property('_identifier')}
+
+
+	slickConfig = TYPO3.TypoScript:RawArray {
+		adaptiveHeight      = ${q(node).property('adaptiveHeight') ? true : false}
+		autoplay            = ${q(node).property('autoplay') ? true : false}
+		autoplaySpeed       = ${q(node).property('autoplaySpeed') ? q(node).property('autoplaySpeed') : 3000}
+		arrows              = ${q(node).property('arrows') ? true : false}
+		centerMode          = ${q(node).property('centerMode') ? true : false}
+		dots                = ${q(node).property('dots') ? true : false}
+		draggable           = ${q(node).property('draggable') ? true : false}
+		fade                = ${q(node).property('fade') ? true : false}
+		easing              = ${q(node).property('easing') ? q(node).property('easing') : 'linear'}
+		infinite            = ${q(node).property('infinite') ? true : false}
+		initialSlide        = ${q(node).property('initialSlide') ? q(node).property('initialSlide') : 0}
+		pauseOnHover        = ${q(node).property('pauseOnHover') ? true : false}
+		pauseOnDotsHover    = ${q(node).property('pauseOnDotsHover') ? true : false}
+		responsive          = ${q(node).property('responsive') ? String.pregReplace(q(node).property('responsive'), '/\s+/', '') : '{}'}
+		slidesToShow        = ${q(node).property('slidesToShow') ? q(node).property('slidesToShow') : ''}
+		slidesToScroll      = ${q(node).property('slidesToScroll') ? q(node).property('slidesToScroll') : ''}
+		speed               = ${q(node).property('speed') ? q(node).property('speed') : 300}
+		variableWidth       = ${q(node).property('variableWidth') ? true : false}
+		vertical            = ${q(node).property('vertical') ? true : false}
+		rtl                 = ${q(node).property('rtl') ? true : false}
+	}
+
+	slickItems = TYPO3.Neos:ContentCollection {
+		nodePath = 'carouselItems'
+		iterationName = 'iterator'
+		itemName = 'node'
+		itemRenderer = KSS.Neos.SlickSlider:SlickItem
+
+	}
+
+}
+
+
+prototype(KSS.Neos.SlickSlider:SlickItem) < prototype(TYPO3.Neos:Content) {
+	sectionName = 'slickItem'
+
+	iterator = ${iterator}
+	slickContainerAttributes = ${slickContainerAttributes}
+
+	itemContent = TYPO3.Neos:ContentCase
+}

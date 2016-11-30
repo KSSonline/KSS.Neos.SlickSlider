@@ -1,0 +1,24 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+
+<f:section name="slick">
+
+	<div {attributes -> f:format.raw()}>
+		<div class="slick-stage showafterinit" data-slick-config='{slickConfig -> f:format.json() -> f:format.raw()}'>
+			<ts:render path="slickItems" />
+		</div>
+	</div>
+
+</f:section>
+
+<!-- Slider item -->
+<f:section name="slickItem">
+	<f:if condition="{iterator.isFirst}">
+		<div{attributes -> f:format.raw()}>
+	</f:if>
+
+		<div><ts:render path="itemContent" /></div>
+
+	<f:if condition="{iterator.isLast}">
+		</div>
+	</f:if>
+</f:section>

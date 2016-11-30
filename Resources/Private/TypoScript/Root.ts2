@@ -1,0 +1,61 @@
+include: NodeTypes/*.ts2
+
+prototype(Page) {
+    head {
+        stylesheets {
+            slickCarousel = TYPO3.TypoScript:Tag {
+                tagName = 'link'
+                attributes {
+                    rel = 'stylesheet'
+                    href = TYPO3.TypoScript:ResourceUri {
+                        path = 'resource://KSS.Neos.SlickSlider/Public/Styles/slick.css'
+                    }
+                }
+            }
+            slickCarousel.@position = 'end'
+            slickCarousel.@if.filterContentElementExist = ${q(node).children('main').find('[instanceof KSS.Neos.SlickSlider:Carousel]').is()}
+
+            slickCarouselTheme = TYPO3.TypoScript:Tag {
+                tagName = 'link'
+                attributes {
+                    rel = 'stylesheet'
+                    href = TYPO3.TypoScript:ResourceUri {
+                        path = 'resource://KSS.Neos.SlickSlider/Public/Styles/slick-theme.css'
+                    }
+                }
+            }
+            slickCarouselTheme.@position = 'after slickCarousel'
+            slickCarouselTheme.@if.filterContentElementExist = ${q(node).children('main').find('[instanceof KSS.Neos.SlickSlider:Carousel]').is()}
+        }
+    }
+
+    body {
+        javascripts.slickCarousel = TYPO3.TypoScript:Tag {
+            tagName = 'script'
+            omitClosingTag = FALSE
+
+            attributes {
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://KSS.Neos.SlickSlider/Public/JavaScript/slick.min.js'
+                }
+            }
+        }
+        javascripts.slickCarousel.@if.filterContentElementExist = ${q(node).children('main').find('[instanceof KSS.Neos.SlickSlider:Carousel]').is()}
+        javascripts.slickCarousel.@position = 'end'
+
+        javascripts.slickCarouselInit = TYPO3.TypoScript:Tag {
+            tagName = 'script'
+            omitClosingTag = FALSE
+
+            attributes {
+                type = 'text/javascript'
+                src = TYPO3.TypoScript:ResourceUri {
+                    path = 'resource://KSS.Neos.SlickSlider/Public/JavaScript/slickInit.js'
+                }
+            }
+        }
+        javascripts.slickCarouselInit.@if.filterContentElementExist = ${q(node).children('main').find('[instanceof KSS.Neos.SlickSlider:Carousel]').is()}
+        javascripts.slickCarouselInit.@position = 'after slickCarousel'
+    }
+}

@@ -1,0 +1,10 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'KSS.Neos.SlickSlider': TRUE
+
+    userInterface:
+      translation:
+        autoInclude:
+          'KSS.Neos.SlickSlider': ['NodeTypes/*']

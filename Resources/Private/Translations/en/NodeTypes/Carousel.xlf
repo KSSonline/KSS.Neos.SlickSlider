@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="TYPO3.Neos.NodeTypes" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="ui.label" xml:space="preserve">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="tabs.dev">
+				<source>Developer options</source>
+			</trans-unit>
+			<trans-unit id="groups.slickSettings">
+				<source>Carousel options</source>
+			</trans-unit>
+			<trans-unit id="groups.slickSecondary">
+				<source>Carousel secondary options</source>
+			</trans-unit>
+			<trans-unit id="groups.slickDev">
+				<source>Carousel developer settings</source>
+			</trans-unit>
+			<trans-unit id="properties.adaptiveHeight">
+				<source>Adaptive Height</source>
+			</trans-unit>
+			<trans-unit id="properties.autoplay">
+				<source>Autoplay</source>
+			</trans-unit>
+			<trans-unit id="properties.autoplaySpeed">
+				<source>Autoplay speed (ms)</source>
+			</trans-unit>
+			<trans-unit id="properties.arrows">
+				<source>Prev/Next Arrows</source>
+			</trans-unit>
+			<trans-unit id="properties.centerMode">
+				<source>Enables centered view with partial prev/next slides</source>
+			</trans-unit>
+			<trans-unit id="properties.dots">
+				<source>Show dot indicators</source>
+			</trans-unit>
+			<trans-unit id="properties.draggable">
+				<source>Enable mouse dragging</source>
+			</trans-unit>
+			<trans-unit id="properties.fade">
+				<source>Enable fade</source>
+			</trans-unit>
+			<trans-unit id="properties.easing">
+				<source>Animation (easing) type</source>
+			</trans-unit>
+			<trans-unit id="properties.easing.selectBoxEditor.placeholder">
+				<source>Default / Linear</source>
+			</trans-unit>
+			<trans-unit id="properties.easing.selectBoxEditor.values.linear">
+				<source>Linear</source>
+			</trans-unit>
+			<trans-unit id="properties.infinite">
+				<source>Infinite loop sliding</source>
+			</trans-unit>
+			<trans-unit id="properties.initialSlide">
+				<source>Slide to start on</source>
+			</trans-unit>
+			<trans-unit id="properties.pauseOnHover">
+				<source>Pause autoplay on hover</source>
+			</trans-unit>
+			<trans-unit id="properties.pauseOnDotsHover">
+				<source>Pause autoplay hovered dots</source>
+			</trans-unit>
+			<trans-unit id="properties.responsive.codeEditor.buttonLabel">
+				<source>Responsive settings</source>
+			</trans-unit>
+			<trans-unit id="properties.slidesToShow">
+				<source># of slides to show</source>
+			</trans-unit>
+			<trans-unit id="properties.slidesToScroll">
+				<source># of slides to scroll</source>
+			</trans-unit>
+			<trans-unit id="properties.speed">
+				<source>Animation speed (ms)</source>
+			</trans-unit>
+			<trans-unit id="properties.variableWidth">
+				<source>Variable width slides</source>
+			</trans-unit>
+			<trans-unit id="properties.vertical">
+				<source>Vertical slide mode</source>
+			</trans-unit>
+			<trans-unit id="properties.rtl">
+				<source>Right-to-left direction</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

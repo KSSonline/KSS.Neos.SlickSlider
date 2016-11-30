@@ -1,0 +1,21 @@
+{
+  "name": "kss-neos-vimeovideoslider",
+  "version": "1.0.0",
+  "authors": [
+    "Alexander Kappler <kappler@kss-online.com>"
+  ],
+  "description": "jQuery Videoslider for vimeo videos. Contains stage, carousel and fullscreen playback",
+  "homepage": "https://www.kss-online.com",
+  "main": "index.html",
+  "dependencies": {
+    "slick-carousel": "~1.6"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
