@@ -1,11 +1,10 @@
 {
-  "name": "kss-neos-vimeovideoslider",
+  "name": "kss-neos-slickslider",
   "version": "1.0.0",
   "authors": [
-    "Alexander Kappler <kappler@kss-online.com>"
+    "Alexander Kappler"
   ],
-  "description": "jQuery Videoslider for vimeo videos. Contains stage, carousel and fullscreen playback",
-  "homepage": "https://www.kss-online.com",
+  "description": "jQuery slick slider",
   "main": "index.html",
   "dependencies": {
     "slick-carousel": "~1.6"
