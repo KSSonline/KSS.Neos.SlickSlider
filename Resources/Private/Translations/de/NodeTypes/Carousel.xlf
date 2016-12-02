@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="TYPO3.Neos.NodeTypes" source-language="en" datatype="plaintext" target-language="de">
+		<body>
+			<trans-unit id="ui.label" xml:space="preserve">
+				<source>Slider</source>
+				<target>Slider</target>
+			</trans-unit>
+			<trans-unit id="tabs.dev">
+				<source>Developer options</source>
+				<target>Entwickler Settings</target>
+			</trans-unit>
+			<trans-unit id="groups.slickSettings">
+				<source>Carousel options</source>
+				<target>Slider Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="groups.slickSecondary">
+				<source>Carousel secondary options</source>
+				<target>Weitere Slider Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="groups.slickDev">
+				<source>Carousel developer settings</source>
+				<target>Slider Entwickler Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="properties.adaptiveHeight">
+				<source>Adaptive Height</source>
+				<target>Anpassende Höhe</target>
+			</trans-unit>
+			<trans-unit id="properties.autoplay">
+				<source>Autoplay</source>
+				<target>Autostart</target>
+			</trans-unit>
+			<trans-unit id="properties.autoplaySpeed">
+				<source>Autoplay speed (ms)</source>
+				<target>Autostart-Geschwindigkeit (ms)</target>
+			</trans-unit>
+			<trans-unit id="properties.arrows">
+				<source>Prev/Next Arrows</source>
+				<target>Links/Rechts Pfeil</target>
+			</trans-unit>
+			<trans-unit id="properties.centerMode">
+				<source>Enables centered view with partial prev/next slides</source>
+				<target>Aktiviert den zentrierten Modus</target>
+			</trans-unit>
+			<trans-unit id="properties.dots">
+				<source>Show dot indicators</source>
+				<target>Zeige Punkt als Indikator</target>
+			</trans-unit>
+			<trans-unit id="properties.draggable">
+				<source>Enable mouse dragging</source>
+				<target>Aktiviere Maus-/Fingersliden</target>
+			</trans-unit>
+			<trans-unit id="properties.fade">
+				<source>Enable fade</source>
+				<target>Faden aktivieren</target>
+			</trans-unit>
+			<trans-unit id="properties.easing">
+				<source>Animation (easing) type</source>
+				<target>Animation (easing) Typ</target>
+			</trans-unit>
+			<trans-unit id="properties.easing.selectBoxEditor.placeholder">
+				<source>Default / Linear</source>
+				<target>Default / Linear</target>
+			</trans-unit>
+			<trans-unit id="properties.easing.selectBoxEditor.values.linear">
+				<source>Linear</source>
+				<target>Linear</target>
+			</trans-unit>
+			<trans-unit id="properties.infinite">
+				<source>Infinite loop sliding</source>
+				<target>Unendliche Wiederholung</target>
+			</trans-unit>
+			<trans-unit id="properties.initialSlide">
+				<source>Slide to start on</source>
+				<target>Starte mit Slide Nr.</target>
+			</trans-unit>
+			<trans-unit id="properties.pauseOnHover">
+				<source>Pause autoplay on hover</source>
+				<target>Pausiere bei Mouseover</target>
+			</trans-unit>
+			<trans-unit id="properties.pauseOnDotsHover">
+				<source>Pause autoplay hovered dots</source>
+				<target>Pausiere bei Mouseover Punktindikator</target>
+			</trans-unit>
+			<trans-unit id="properties.responsive.codeEditor.buttonLabel">
+				<source>Responsive settings</source>
+				<target>Responsive Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="properties.slidesToShow">
+				<source># of slides to show</source>
+				<target>Anzahl zu zeigende Slides</target>
+			</trans-unit>
+			<trans-unit id="properties.slidesToScroll">
+				<source># of slides to scroll</source>
+				<target>Anzahl Slides zum scrollen</target>
+			</trans-unit>
+			<trans-unit id="properties.speed">
+				<source>Animation speed (ms)</source>
+				<target>Animationsgeschwindigkeit (ms)</target>
+			</trans-unit>
+			<trans-unit id="properties.variableWidth">
+				<source>Variable width slides</source>
+				<target>Slides mit variablen Breiten</target>
+			</trans-unit>
+			<trans-unit id="properties.vertical">
+				<source>Vertical slide mode</source>
+				<target>Vertikaler slide Modus</target>
+			</trans-unit>
+			<trans-unit id="properties.rtl">
+				<source>Right-to-left direction</source>
+				<target>Rechts-nach-links Richtung</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
