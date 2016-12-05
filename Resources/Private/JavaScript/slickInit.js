@@ -19,8 +19,6 @@ $(document).ready(function(){
         slickConfig.responsive = JSON.parse(slickConfig.responsive);
     }
 
-    console.log(slickConfig);
-
     _$slickSlider.on('init', function(event, slick, currentSlide, nextSlide){
         $(sliderStageClass).removeClass('showafterinit');
     });
